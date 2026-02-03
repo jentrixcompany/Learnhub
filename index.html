@@ -3,42 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LearnHub</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>LearnHub Academy</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>LearnHub</h1>
-  <p>Apply today. Learn skills for tomorrow.</p>
+<!-- HERO / INTRO SECTION -->
+<header class="hero">
+  <h1>LearnHub Academy</h1>
+  <p>
+    A digital learning platform helping students gain practical,
+    job-ready skills in technology and digital fields.
+  </p>
+  <a href="#apply" class="btn">Apply to Study</a>
 </header>
 
-<section class="about">
-  <h2>About LearnHub</h2>
+<!-- MISSION SECTION -->
+<section class="mission">
+  <h2>Our Mission</h2>
   <p>
-    LearnHub is an online learning platform where anyone can apply to study
-    web development and digital skills. No experience required.
+    At LearnHub Academy, our mission is to make education accessible
+    to everyone. We believe learning should be practical, affordable,
+    and focused on real-world skills.
+  </p>
+  <p>
+    Our programs are designed for beginners and self-learners who want
+    to build confidence and prepare for digital careers.
   </p>
 </section>
 
-<section class="apply">
-  <h2>Apply to Study</h2>
+<!-- WHY CHOOSE US -->
+<section class="why-us">
+  <h2>Why Choose LearnHub?</h2>
+  <ul>
+    <li>Beginner-friendly courses with step-by-step guidance</li>
+    <li>Hands-on projects instead of only theory</li>
+    <li>Flexible online learning at your own pace</li>
+    <li>Supportive learning community</li>
+  </ul>
+</section>
+
+<!-- COURSES -->
+<section class="courses">
+  <h2>Programs We Offer</h2>
+  <div class="course">
+    <h3>Web Development</h3>
+    <p>
+      Learn how to build websites using HTML, CSS, and JavaScript,
+      starting from the basics and moving to real projects.
+    </p>
+  </div>
+
+  <div class="course">
+    <h3>Graphic Design</h3>
+    <p>
+      Learn design principles, branding, and visual communication
+      using modern design tools.
+    </p>
+  </div>
+
+  <div class="course">
+    <h3>Digital Marketing</h3>
+    <p>
+      Understand online marketing strategies including social media,
+      content creation, and basic analytics.
+    </p>
+  </div>
+</section>
+
+<!-- APPLICATION -->
+<section id="apply" class="apply">
+  <h2>Student Application</h2>
+  <p>
+    Complete the form below to apply for admission. Our team reviews
+    applications and contacts successful applicants via email.
+  </p>
 
   <form>
-    <input type="text" placeholder="Full Name" required>
-    <input type="email" placeholder="Email Address" required>
+    <label>Full Name</label>
+    <input type="text" placeholder="Your full name" required>
+
+    <label>Email Address</label>
+    <input type="email" placeholder="Your email address" required>
+
+    <label>Course of Interest</label>
     <select required>
-      <option value="">Select Course</option>
+      <option value="">Select a course</option>
       <option>Web Development</option>
       <option>Graphic Design</option>
       <option>Digital Marketing</option>
     </select>
-    <button type="submit">Apply Now</button>
+
+    <label>Why do you want to study with us?</label>
+    <textarea rows="4" placeholder="Tell us briefly" required></textarea>
+
+    <button type="submit">Submit Application</button>
   </form>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <p>&copy; 2026 LearnHub. All rights reserved.</p>
+  <p>&copy; 2026 LearnHub Academy. Empowering learners worldwide.</p>
 </footer>
 
 </body>
