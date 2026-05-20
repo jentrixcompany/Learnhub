@@ -441,3 +441,118 @@ footer {
     padding: 70px 5%;
   }
 }
+
+/* =========================
+   EXPERIENCE SECTION
+========================= */
+.experience-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.experience-image img{
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.experience-content h3{
+  font-size:2rem;
+  margin-bottom:20px;
+  color:var(--primary);
+}
+
+.experience-content p{
+  margin-bottom:20px;
+  color:var(--gray);
+}
+
+.experience-content ul{
+  list-style:none;
+}
+
+.experience-content li{
+  margin-bottom:12px;
+  font-weight:500;
+}
+
+/* =========================
+   GALLERY
+========================= */
+.gallery{
+  background:#eef4ff;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  border-radius:18px;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.04);
+}
+
+/* =========================
+   SUCCESS SECTION
+========================= */
+.success{
+  background:white;
+}
+
+/* =========================
+   CTA SECTION
+========================= */
+.cta{
+  background:
+  linear-gradient(rgba(15,23,42,0.9),
+  rgba(15,23,42,0.9)),
+  url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600')
+  center/cover no-repeat;
+
+  color:white;
+  text-align:center;
+  padding:120px 8%;
+}
+
+.cta-content{
+  max-width:800px;
+  margin:auto;
+}
+
+.cta h2{
+  font-size:3rem;
+  margin-bottom:25px;
+}
+
+.cta p{
+  margin-bottom:35px;
+  color:#e2e8f0;
+  font-size:1.1rem;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media(max-width:900px){
+
+  .experience-grid{
+    grid-template-columns:1fr;
+  }
+
+  .cta h2{
+    font-size:2.2rem;
+  }
+
+}
