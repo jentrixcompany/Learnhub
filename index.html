@@ -85,18 +85,20 @@
     applications and contacts successful applicants via email.
   </p>
 
-  <form action="https://formsubmit.co/kemeijesse146@gmail.com" method="POST">
+  <form action="https://api.web3forms.com/submit" method="POST">
 
-  <input type="hidden" name="_captcha" value="false">
+  <!-- Your Access Key -->
+  <input type="hidden" name="access_key" value="3d4d54e7-5aee-4f55-bf2e-47f4bf22e13c">
 
-  <input type="hidden" name="_next"
+  <!-- Redirect -->
+  <input type="hidden" name="redirect"
   value="https://jentrixcompany.github.io/Learnhub/">
 
   <label>Full Name</label>
-  <input type="text" name="name" required>
+  <input type="text" name="name" placeholder="Your full name" required>
 
   <label>Email Address</label>
-  <input type="email" name="email" required>
+  <input type="email" name="email" placeholder="Your email address" required>
 
   <label>Course of Interest</label>
   <select name="course" required>
@@ -107,7 +109,8 @@
   </select>
 
   <label>Why do you want to study with us?</label>
-  <textarea name="message" rows="4" required></textarea>
+  <textarea name="message" rows="4"
+  placeholder="Tell us briefly" required></textarea>
 
   <button type="submit">Submit Application</button>
 
